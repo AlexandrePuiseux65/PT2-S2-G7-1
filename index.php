@@ -1,4 +1,6 @@
-<?php
 
 
-// test des codes 
+
+ 
+
+<?php echo 'Salut les amis' ?>
