@@ -27,6 +27,7 @@ if (isset($_POST["send"])) {
 <!-- 
     Pour la syntaxe du code css, je préfère mettre le nom du fichier concerné puis l'élement concerné
 -->
+<div class="background"> <!-- Pour appliquer l'effet de glass, a modifier -->
 
 <form class="register-form" action="" method="post">
     <h1 class="register-form-h1">Création de votre compte</h1>
@@ -61,7 +62,7 @@ if (isset($_POST["send"])) {
         <input type="submit" name="send" value="Créer">
     </div>
 
-
+    </div>
 
 </form>
 
