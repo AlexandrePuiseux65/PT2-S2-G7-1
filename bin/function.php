@@ -19,3 +19,5 @@
 
         return $link;
     }
+
+// Attention c'est pour MAc à changer pout WAMP
