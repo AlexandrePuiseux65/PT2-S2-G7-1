@@ -3,7 +3,6 @@
     background-color: #ADA7A3;
     display: flex;
     list-style: none;
-    justify-content: end;
 }
 
 #nav a {
@@ -12,4 +11,5 @@
     padding: 10px;
     display: table-cell;
     vertical-align: middle;
+    margin-right: auto;
 }
