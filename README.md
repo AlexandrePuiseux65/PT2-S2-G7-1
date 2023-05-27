@@ -3,4 +3,3 @@ Projet Technologique 2: Boutique en ligne d’audiovisuels | ECE B1Gr1B, Mai 202
 
 Fait par : Gabriel Brousse, Alexandre Puiseux, Martin Charpentier
 
-# Description :

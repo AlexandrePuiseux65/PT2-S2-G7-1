@@ -10,10 +10,10 @@
 <ul id="nav">
     <?php if (!isset($_SESSION['user'])) { ?>
         <li><a href="index.php"> Accueil</a></li>
-        <li><a href="sign_in_up.php">Connexion</a></li>
-        <li><a href="shopping_basket.php">Pannier</a></li>
+        <li><a href="register.php">Créer un compte</a></li>
+        <li><a href="login.php">Connexion</a></li>
     <?php } else { ?>
-        <li><a href="persos.php"><?php echo $_SESSION['user']['email'] ?></a></li>
+        <li><a href="client.php"><?php echo $_SESSION['user']['email'] ?></a></li>
         <li><a href="logout.php">Logout</a></li>
     <?php } ?>
 </ul>
