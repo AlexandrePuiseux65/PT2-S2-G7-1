@@ -1,4 +1,6 @@
 <?php require_once('bin/_header.php');
+require_once('bin/function.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -12,10 +14,8 @@
 </head>
 
 <body>
-    <h1>Page d'accueil</h1>
-    <?php
-    require_once('bin/_footer.php');
-    ?>
+    <h1>Panier</h1>
+
 </body>
 
 </html>

@@ -7,8 +7,9 @@
 }
 
 #nav a {
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/background.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 </head>
 <body>
     <?php require_once('bin/_nav.php'); ?>
