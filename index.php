@@ -1,4 +1,5 @@
-<?php echo 'Salut les amis' ?>
+<?php require_once('_header.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
