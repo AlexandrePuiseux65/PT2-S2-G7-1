@@ -1,4 +1,4 @@
-<?php require_once('_header.php');
+<?php require_once('bin/_header.php');
 ?>
 
 <!DOCTYPE html>

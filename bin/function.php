@@ -12,7 +12,7 @@
 
     function connect () {
         $link = new PDO(
-            'mysql:dbname=game;host=localhost:8889', 
+            'mysql:dbname=Boutique;host=localhost:8889', 
             'root', 
             'root'
         );
