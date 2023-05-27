@@ -1,7 +1,7 @@
 .background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
+    width: 700px;
+    height: 890px;
+    position: fixed;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
@@ -10,11 +10,11 @@
   .background .shape{
       height: 200px;
       width: 200px;
-      position: absolute;
+      position: fixed;
       border-radius: 50%;
   }
   
-  .shape:first-child{
+  /* .shape:first-child{
     background: linear-gradient(
         #1845ad,
         #23a2f6
@@ -31,11 +31,11 @@
     );
     right: -30px;
     bottom: -80px;
-  }
+  } */
   
   form{
-    height: 520px;
-    width: 400px;
+    width: 700px;
+    height: 690px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -50,8 +50,8 @@
   }
   
   form *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
+    font-family: 'Quicksand',sans-serif;
+    color: #000000;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -82,14 +82,14 @@
     font-weight: 300;
   }
   ::placeholder{
-    color: #e5e5e5;
+    color: #000000;
   }
   
   button{
     margin-top: 50px;
     width: 100%;
-    background-color: #fffbfb;
-    color: #080710;
+    background-color: #787070;
+    color: #787070;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
@@ -98,15 +98,15 @@
   }
   
   .social{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
   }
   .social div{
     width: 150px;
     border-radius: 3px;
     padding: 5px 10px 10px 5px;
-    background-color: rgba(255,255,255,0.27);
-    color: #545861;
+    background-color: rgba(110, 103, 103, 0.27);
+    color: #002375;
     text-align: center;
   }
   .social div:hover{
