@@ -8,3 +8,18 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-color: #DEDAD7 ;
 }
+
+.center_text{
+    text-align: center
+}
+
+.center_element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:invalid {
+    outline: none;
+  }
+  

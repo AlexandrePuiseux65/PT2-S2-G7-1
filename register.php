@@ -31,7 +31,7 @@ if (isset($_POST["send"])) {
     <!-- Pour appliquer l'effet de glass, a modifier -->
 
     <form class="register-form" action="" method="post">
-        <h1 class="register-form-h1">Création de votre compte</h1>
+        <h1 class="center_text">Création de votre compte</h1>
 
         <div class="register-form-element1">
             <label for="Nom">Nom :</label>
@@ -55,12 +55,12 @@ if (isset($_POST["send"])) {
         </div>
 
         <div class="register-form-element5">
-            <label for="Adresse_postale">Adresse postale</label>
+            <label for="Adresse_postale">Adresse postale :</label>
             <input type="text" name="Adresse_postale" id="Adresse_postale" placeholder="Entrez votre adresse postale">
         </div>
 
-        <div class="register-form-element6">
-            <input type="submit" name="send" value="Créer">
+        <div class="center_element">
+            <input type="submit" name="send" value="Créer" style="width:130px">
         </div>
 
 </div>
