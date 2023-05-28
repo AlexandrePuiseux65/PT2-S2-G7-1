@@ -9,7 +9,7 @@ if (isset($_POST["send"])) {
     $sth = $bdd->prepare($sql);
 
     $sth->execute([
-        'Adresse_email' => $_POST['email']
+        'Adresse_email' => $_POST['Adresse_email']
     ]);
 
     $user = $sth->fetch();
@@ -21,6 +21,7 @@ if (isset($_POST["send"])) {
     } else {
         $msg = "Email ou mot de passe incorrect !";
     }
+    header('../user.php');
 }
 ?>
 
@@ -33,21 +34,21 @@ if (isset($_POST["send"])) {
         <?php if (isset($msg)) { echo "<div>" . $msg . "</div>"; } ?>
 
         <div >
-            <label for="email">Email</label>
+            <label for="Adresse_email">Email</label>
             <input 
                 type="email" 
                 placeholder="Entrez votre email" 
-                name="email" 
-                id="email" 
+                name="Adresse_email" 
+                id="Adresse_email" 
             />
         </div>
         <div>
-            <label for="password">Mot de passe</label>
+            <label for="Mot_de_passe">Mot de passe</label>
             <input 
                 type="password" 
                 placeholder="Entrez votre mot de passe" 
-                name="password" 
-                id="password" 
+                name="Mot_de_passe" 
+                id="Mot_de_passe" 
             />
         </div>
         <div class="center_element">

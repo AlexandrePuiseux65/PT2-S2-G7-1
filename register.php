@@ -16,6 +16,7 @@ if (isset($_POST["send"])) {
 
     ]);
 
+    header('Location: login.php');
 
 }
 
