@@ -1,12 +1,14 @@
 #footer {
-    /* position: absolute; */
+    position: absolute; 
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     color: #666;
     bottom: 0;
+    width: 100%;
 }
+
 #footer a {
     color: #666;
     text-decoration: none;
