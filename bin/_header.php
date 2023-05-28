@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/background.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/aboutus.css">
 </head>
 <body>
     <?php require_once('bin/_nav.php'); ?>
