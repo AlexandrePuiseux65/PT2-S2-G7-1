@@ -8,15 +8,18 @@
 </head>
 <body>
 <ul id="nav">
-    <?php if (!isset($_SESSION['user'])) { ?>
+    <?php if (!isset($_SESSION['utilisateur'])) { ?>
         <li><a href="index.php"><img src="img/logo1.png" height="40px" width="40px" /></a></li>
         <li><a href="Product.php"> Nos Produits </a></li>
         <li><a href="register.php">Créer un compte</a></li>
         <li><a href="login.php">Connexion</a></li>
         <li><a href="shopping.php"><img src="img/panier.png" height="20px" width="20px" /></a></li>
     <?php } else { ?>
-        <li><a href="user.php"><?php echo $_SESSION['user']['email'] ?></a></li>
+        <li><a href="index.php"><img src="img/logo1.png" height="40px" width="40px" /></a></li>
+        <li><a href="Product.php"> Nos Produits </a></li>
+        <li><a href="user.php"><?php echo $_SESSION['utilisateur']['Adresse_email'] ?></a></li>
         <li><a href="logout.php">Logout</a></li>
+        <li><a href="shopping.php"><img src="img/panier.png" height="20px" width="20px" /></a></li>
     <?php } ?>
 </ul>
 </body>
