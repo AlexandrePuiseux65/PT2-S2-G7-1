@@ -1,0 +1,40 @@
+/*
+Style sheet for user.php
+
+*/
+
+.user-main{
+    height:100vh;
+    font-size: 1.2em;
+}
+
+.user-main-h1{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.user-main-container1{
+    border-radius: 20px;
+    margin: 3%;
+    padding: 2%;
+    background-color: #ADA7A3;
+    color: black;
+}
+
+.user-main-container1-h2{
+    margin: 1%;
+    display: flex;
+    font-size: 1.8em;
+    
+}
+
+.user-main-container1-element1{
+    display: flex;
+    margin: 1% 0% 0% 1%;
+}
+
+.info{
+    font-size: 1.1em;
+    text-decoration: underline;
+}

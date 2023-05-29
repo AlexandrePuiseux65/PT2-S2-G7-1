@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/background.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/aboutus.css">
+    <link rel="stylesheet" href="styles/user.css">
 </head>
 <body>
     <?php require_once('bin/_nav.php'); ?>
