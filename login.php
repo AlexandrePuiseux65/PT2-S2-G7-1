@@ -1,5 +1,4 @@
 <?php
-require_once('bin/_header.php');
 require_once('bin/function.php');
 
 if (isset($_POST["send"])) {
@@ -14,14 +13,10 @@ if (isset($_POST["send"])) {
 
     $user = $sth->fetch();
 
-    $email_admin = "admin@admin.com";
-    $mdp_admin = "admin1234";
-
     if ($user && password_verify($_POST['Mot_de_passe'], $user['Mot_de_passe'])) {
         // dd($user);
         $_SESSION['utilisateur'] = $user;
         header('Location: user.php');
-        exit;
     } elseif ($_POST['Adresse_email']== $email_admin && $_POST['Mot_de_passe']==$mdp_admin) {
         $_SESSION['administrateur'] = $user;
         header('Location: admin/index_admin.php');
@@ -30,7 +25,6 @@ if (isset($_POST["send"])) {
     else {
         $msg = "Email ou mot de passe incorrect !";
     }
-    header('Location: ../user.php');
 }
 ?>
 
