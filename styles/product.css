@@ -1,12 +1,13 @@
 /*
 Style sheet for show_produit.php
+                details_product.php
 
 */
 
 /* show_produit.php*/
 img{
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    border-radius: 20px;
 }
 
 .shproduct-container{
@@ -61,6 +62,7 @@ img{
     font-size: 1.2em;
 }
 
+
 .add-product-textarea{
     width: 100%;
     background-color: rgba(255,255,255,0.07);
@@ -70,3 +72,88 @@ img{
     font-size: 14px;
     font-weight: 300;
 }
+
+
+
+/* details_product.php*/
+
+.detproduct-main img{
+    border-radius: 20px;
+}
+
+.important{
+    text-decoration: solid;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.detproduct-links{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 20px;
+    margin: auto;
+    width: 14%;
+    padding: 0.5%;
+    transition: all .3s ease-in-out;
+}
+
+.detproduct-links a{
+    color: rgb(255, 255, 255);
+}
+
+.detproduct-links:hover{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    margin: auto;
+    width: 14%;
+    padding: 0.5%;
+}
+
+
+.detproduct-main h1{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.detproduct-main-element1{
+    background-color: grey;
+    padding: 2%;
+    border-radius: 20px;
+    margin: 4%;
+    display: flex;
+}
+
+.detproduct-main-element1-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.detproduct-main-element1-content-box1{
+    display: flex;
+    font-size: 1.3em;
+}
+
+.detproduct-main-element1-content-box1{
+    text-align: justify;
+}
+
+.detproduct-main-element1-content-box2{
+    display: flex;
+    font-size: 1.3em;
+    margin: 2%;
+}
+
+.detproduct-main-element1-content-box3{
+    display: flex;
+    font-size: 1.3em;
+    justify-content: end;
+}
+
+

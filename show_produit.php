@@ -1,14 +1,14 @@
 <?php
-require_once('bin/function.php');
+    require_once('bin/function.php');
 
-$bdd = connect();
+    $bdd = connect();
 
-$sql = "SELECT * FROM produit";
+    $sql = "SELECT * FROM produit";
 
-$sth = $bdd->prepare($sql);
-$sth->execute();
+    $sth = $bdd->prepare($sql);
+    $sth->execute();
 
-$produit = $sth->fetchAll();
+    $produit = $sth->fetchAll();
 
 ?>
 
@@ -29,7 +29,7 @@ $produit = $sth->fetchAll();
 
                 <p><?php echo $produit['Description']; ?></p>
 
-                <a href="">En savoir plus</a>
+                <a href="details_product.php?id=<?php echo $produit['ID']?>">En savoir plus</a>
 
                 <p class="shproduct-container-element1-price"><?php echo $produit['Prix']; ?>€</p>
             </div>
