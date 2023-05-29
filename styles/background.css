@@ -99,3 +99,89 @@
   .social i{
     margin-right: 4px;
   }
+
+
+
+
+/*  index.php */
+
+.index-main{
+  height: 150vh;
+}
+
+.index-main-haut-de-page{
+  background-image: url('https://images.unsplash.com/photo-1682687981974-c5ef2111640c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  color: white;
+}
+
+.index-main-haut-de-page h1{
+  font-size: 3.0em;
+}
+
+.index-main-h2{
+  display: flex;
+  justify-content: center;
+  font-size: 2.2em;
+  margin-top: 4%;
+}
+
+.index-main-content{
+  width: 80%;
+  border-radius: 20px;
+  background-color: grey;
+  margin: auto;
+  margin-top: 4%;
+  padding: 3%;
+  display: flex
+}
+
+.index-main-content img{
+  border-radius: 20px;
+}
+
+.index-main-content-element1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+
+}
+
+.index-main-content-element1 h3{
+  display: flex;
+  align-items: center;
+  font-size: 2.2em;
+  margin-bottom: 2%;
+}
+
+.index-main-content-element1 p{
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.index-main-content-element1 a{
+  font-size: 1.2em;
+  margin-top: 2%;
+  color: black;
+  transition: all .2s ease-in-out;
+}
+
+.index-main-content-element1 a:hover{
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.index-main-content-element1-price{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2em;
+}
