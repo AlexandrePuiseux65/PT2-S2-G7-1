@@ -8,7 +8,7 @@ class produit // Création de la class produit
     private string $Description;
     private float $Prix;
     private int $Stock;
-    private int $Categorie;
+    // private string $Categorie;
 
 public function add_produit($produit)
     {
@@ -16,7 +16,7 @@ public function add_produit($produit)
         $this->Description = $produit['Description'];
         $this->Prix = $produit['Prix'];
         $this->Stock = $produit['Stock'];
-        $this->Categorie = $produit['Categorie'];
+        // $this->Categorie = $produit['Categorie'];
     }
 
     public function getName(): string //Prendre et set le nom

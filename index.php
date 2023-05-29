@@ -5,7 +5,7 @@
 
     <div class="index-main-haut-de-page">
         
-        <h1>La photo parfaite ne prend qu'un instant</h1>
+        <h1>La photo parfaite ne prend qu'un instant.</h1>
     
     </div>
 

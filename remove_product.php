@@ -1,21 +1,23 @@
-<?php require_once('bin/_header.php');
-require_once('bin/function.php');
+<?php 
+    require_once('bin/function.php');
 
-?>
+    if (!isset($_SESSION['administrateur'])) {
+        header('Location: login.php');
+        exit(); 
+    }
 
-<!DOCTYPE html>
-<html lang="en">
+    if (!isset($_GET['ID'])) {
+        header('Location: Product.php?msg=id non passé !');
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
+    $bdd = connect();
 
-<body>
-    <h1>Retirer un produit</h1>
+    $sql="DELETE FROM produit WHERE ID = :ID";
 
-</body>
+    $sth = $bdd->prepare($sql);
+        
+    $sth->execute([
+        'ID'          => $_GET['ID'],
+    ]);
 
-</html>
+    header('Location: Product.php?msg=Le produit est bien supprimé !');

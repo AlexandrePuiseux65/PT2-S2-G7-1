@@ -1,6 +1,15 @@
-<?php require_once('bin/_header.php');
+<?php
+require_once('bin/_header.php');
 require_once('bin/function.php');
 
+$bdd = connect();
+
+$sql = "SELECT * FROM produit";
+
+$sth = $bdd->prepare($sql);
+$sth->execute();
+
+$perso = $sth->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +23,7 @@ require_once('bin/function.php');
 </head>
 
 <body>
-    <h1>Liste Produits</h1>
+    <h1 class="center_text">Liste de nos produit</h1>
 
 </body>
 
