@@ -21,7 +21,7 @@ if (isset($_POST["send"])) {
         header('Location: user.php');
         exit(); // Assurez-vous de terminer le script après la redirection
     } elseif ($_POST['Mot_de_passe'] == $mdp_admin && $_POST['Adresse_email'] == $email_admin) {
-        $_SESSION['administrateur'] = true; // Stockez simplement un indicateur pour l'administrateur
+        $_SESSION['administrateur'] = $user; // Stockez simplement un indicateur pour l'administrateur
         header('Location: index_admin.php');
         exit(); // Assurez-vous de terminer le script après la redirection
     } else {

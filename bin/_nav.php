@@ -1,3 +1,5 @@
+<?php require_once('bin/function.php');?>
+
 <ul id="nav">
     <?php if (!isset($_SESSION['utilisateur']) && !isset($_SESSION['administrateur'])) { ?>
         <div class="nav-logo">
@@ -11,7 +13,7 @@
             <li><a href="shopping.php"><img src="img/panier.png" /></a></li>
         </div>
 
-    <?php } elseif (isset($_SESSION['utilisateur']) && !isset($_SESSION['administrateur'])) { ?>
+    <?php } elseif (isset($_SESSION['utilisateur'])) { ?>
 
         <div class="nav-logo">
             <li><a href="index.php"><img src="img/logo1.png" /></a></li>
