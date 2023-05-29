@@ -2,13 +2,13 @@
 require_once('bin/function.php');
 $bdd = connect();
 
-$sql = "SELECT * FROM utilisateur WHERE user_id = :user_id";
+$sql = "SELECT * FROM utilisateur;";
 
 $sth = $bdd->prepare($sql);
 
 ?>
+
 <?php 
-    require_once('bin/function.php');
     require_once('bin/_header.php');
 ?>
 
@@ -57,8 +57,11 @@ $sth = $bdd->prepare($sql);
             </p>    
         </div>
     </div>
-   
-
+    
+    <div class="user-main-links">
+        <a href="user_edit.php">Changer mes informations</a>
+    </div>
+    
 </div>
 
 

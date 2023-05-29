@@ -1,5 +1,6 @@
 /*
-Style sheet for user.php
+Style sheet for user.php and
+                user_edit.php
 
 */
 
@@ -37,4 +38,40 @@ Style sheet for user.php
 .info{
     font-size: 1.1em;
     text-decoration: underline;
+}
+
+.user-main-links{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 20px;
+    margin: auto;
+    width: 14%;
+    padding: 0.5%;
+    transition: all .3s ease-in-out;
+}
+
+.user-main-links a{
+    color: rgb(255, 255, 255);
+}
+
+.user-main-links:hover{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    margin: auto;
+    width: 14%;
+    padding: 0.5%;
+}
+
+
+
+/*
+user_edit.php
+*/
+
+
+.userEdit-main{
+    height: 78vh;
 }
