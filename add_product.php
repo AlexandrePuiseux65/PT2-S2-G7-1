@@ -53,7 +53,7 @@ require_once('bin/_header.php');
         </div>
         <div>
             <label for="Description">Description :</label>
-            <textarea name="Description" id="Description" cols="66" rows="5" placeholder="Remplir la description du produit"></textarea>
+            <textarea name="Description" id="Description" cols="66" rows="5" placeholder="Remplir la description du produit" class="add-product-textarea"></textarea>
         </div>
         <div>
             <label for="Prix">Prix de vente :</label>
