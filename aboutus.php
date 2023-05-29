@@ -22,7 +22,7 @@
         
         <div>
             <h2 class="about-us-element2-h2">Gabriel Brousse</h2>
-            <img class="about-us-element2-img" src="img/g-brousse.jpeg" alt="Photo Martin Charpentier">
+            <img class="about-us-element2-img" src="img/g-brousse.jpeg" alt="Photo Gabriel Brousse">
         </div>
         <div>
             <p class="about-us-element2-text">
@@ -36,7 +36,7 @@
         
         <div>
             <h2 class="about-us-element3-h2">Alexandre Puiseux</h2>
-            <img class="about-us-element3-img" src="img/a-puiseux.jpeg" alt="Photo Martin Charpentier">
+            <img class="about-us-element3-img" src="img/a-puiseux.jpeg" alt="Photo Alexandre Puiseux">
         </div>
         <div>
             <p class="about-us-element3-text">
