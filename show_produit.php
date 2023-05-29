@@ -33,11 +33,7 @@
                         <?php echo $produit['Description']; ?>
                     </p>
 
-<<<<<<< HEAD
                 <a href="details_product.php?id=<?php echo $produit['ID']?>">En savoir plus</a>
-=======
-                    <a href="">En savoir plus</a>
->>>>>>> 202e3f9 (Supprimer fonctionnelle / Alex)
 
                     <p class="shproduct-container-element1-price">
                         <?php echo $produit['Prix']; ?>€
