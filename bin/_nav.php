@@ -34,7 +34,6 @@
         <div class="nav-links">
             <li><a href="show_produit.php">Produits</a></li>
             <li><a href="add_product.php">Ajouter un produit</a></li>
-            <li><a href="remove_product.php">Retirer un produit</a></li>
             <li><a href="logout.php">Déconnexion</a></li>
         </div>
 

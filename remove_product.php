@@ -1,23 +1,25 @@
 <?php 
-    require_once('bin/function.php');
+require_once('bin/function.php');
 
-    if (!isset($_SESSION['administrateur'])) {
-        header('Location: login.php');
-        exit(); 
-    }
+if (!isset($_GET['ID'])) {
+    header('Location: show_produit.php?msg=id non passé !');
+    exit(); 
+}
 
-    if (!isset($_GET['ID'])) {
-        header('Location: Product.php?msg=id non passé !');
-    }
+$produitID = $_GET['ID']; 
 
-    $bdd = connect();
+$bdd = connect();
 
-    $sql="DELETE FROM produit WHERE ID = :ID";
+$sql = "DELETE FROM produit WHERE ID = :ID";
 
-    $sth = $bdd->prepare($sql);
-        
-    $sth->execute([
-        'ID'          => $_GET['ID'],
-    ]);
+$sth = $bdd->prepare($sql);
+$sth->bindValue(':ID', $produitID, PDO::PARAM_INT); 
 
-    header('Location: Product.php?msg=Le produit est bien supprimé !');
+if ($sth->execute()) {
+    header('Location: show_produit.php?msg=Le produit est bien supprimé !');
+    exit(); 
+} else {
+    var_dump($sth->errorInfo());
+    exit(); 
+}
+?>
