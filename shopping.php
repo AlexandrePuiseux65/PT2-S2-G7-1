@@ -1,21 +1,36 @@
-<?php require_once('bin/_header.php');
-require_once('bin/function.php');
+<?php require_once('bin/function.php');
+ 
+$bdd = connect();
+
+$sql = "SELECT * FROM produit";
+
+$sth = $bdd->prepare($sql);
+$sth->execute();
+
+$produit = $sth->fetchAll();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once('bin/_header.php');?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
+<div class="shopping-main">
 
-<body>
-    <h1>Panier</h1>
+    <h1>Mon pannier</h1>
 
-</body>
+    <h2>Mes articles</h2>
 
-</html>
+    <div class="shopping-main-content">
+
+    
+    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<?php require_once('bin/_footer.php');?>

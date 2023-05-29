@@ -89,7 +89,41 @@ Style sheet for show_produit.php
     margin-bottom: 2%;
 }
 
+
+/*Bouton pour acheter et ajouter au panier*/
+
 .detproduct-links{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.detproduct-links1{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 20px;
+    width: 14%;
+    margin: auto;
+    padding: 0.5%;
+    transition: all .3s ease-in-out;
+}
+
+.detproduct-links1 a{
+    color: rgb(255, 255, 255);
+}
+
+.detproduct-links1:hover{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    margin: auto;
+    width: 14%;
+    padding: 0.5%;
+}
+
+.detproduct-links2{
     display: flex;
     justify-content: center;
     background-color: grey;
@@ -100,11 +134,11 @@ Style sheet for show_produit.php
     transition: all .3s ease-in-out;
 }
 
-.detproduct-links a{
+.detproduct-links2 a{
     color: rgb(255, 255, 255);
 }
 
-.detproduct-links:hover{
+.detproduct-links2:hover{
     display: flex;
     justify-content: center;
     background-color: rgb(70, 70, 70);
@@ -113,6 +147,7 @@ Style sheet for show_produit.php
     width: 14%;
     padding: 0.5%;
 }
+
 
 
 .detproduct-main h1{

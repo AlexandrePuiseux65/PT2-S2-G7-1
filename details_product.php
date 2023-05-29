@@ -45,9 +45,13 @@
         
     </div>
     <div class="detproduct-links">
-        <a href="">Acheter</a>
+        <div class="detproduct-links1">
+            <a href="">Acheter</a>
+        </div>
+        <div class="detproduct-links2">
+            <a href="shopping.php">Ajouter à mon panier</a>
+        </div>
     </div>
-    
 
     
 

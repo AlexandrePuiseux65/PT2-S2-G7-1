@@ -1,6 +1,7 @@
 /*
 Style sheet for user.php and
                 user_edit.php
+                shopping.php
 
 */
 
@@ -73,5 +74,15 @@ user_edit.php
 
 
 .userEdit-main{
+    height: 78vh;
+}
+
+
+
+/*Shoppping.php*/
+
+
+
+.shopping-main{
     height: 78vh;
 }
