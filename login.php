@@ -3,7 +3,10 @@ require_once('bin/function.php');
 
 if (isset($_POST["send"])) {
     $bdd = connect();
-    $sql = "SELECT * FROM utilisateur INNER JOIN administrateur ON utilisateur.Adresse_email = administrateur.Adresse_email WHERE utilisateur.Adresse_email = :Adresse_email;";
+    $sql = "SELECT * FROM utilisateur WHERE Adresse_email = :Adresse_email;";
+
+    $email_admin = "admin@admin.com";
+    $mdp_admin = "admin1234";
 
     $sth = $bdd->prepare($sql);
 
@@ -14,19 +17,20 @@ if (isset($_POST["send"])) {
     $user = $sth->fetch();
 
     if ($user && password_verify($_POST['Mot_de_passe'], $user['Mot_de_passe'])) {
-        // dd($user);
         $_SESSION['utilisateur'] = $user;
         header('Location: user.php');
-    } elseif ($_POST['Adresse_email']== $email_admin && $_POST['Mot_de_passe']==$mdp_admin) {
-        $_SESSION['administrateur'] = $user;
-        header('Location: admin/index_admin.php');
-        exit;
-    } 
-    else {
+        exit(); // Assurez-vous de terminer le script après la redirection
+    } elseif ($_POST['Mot_de_passe'] == $mdp_admin && $_POST['Adresse_email'] == $email_admin) {
+        $_SESSION['administrateur'] = true; // Stockez simplement un indicateur pour l'administrateur
+        header('Location: index_admin.php');
+        exit(); // Assurez-vous de terminer le script après la redirection
+    } else {
         $msg = "Email ou mot de passe incorrect !";
     }
 }
 ?>
+
+
 
 <?php require_once('bin/_header.php'); ?>
 <form action="" method="post">
