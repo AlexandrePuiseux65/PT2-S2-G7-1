@@ -5,7 +5,8 @@ Style sheet for show_produit.php
 
 /* show_produit.php*/
 img{
-    width: 20%;
+    width: 50%;
+    height: 50%;
 }
 
 .shproduct-container{
