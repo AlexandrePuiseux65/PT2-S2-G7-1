@@ -1,12 +1,26 @@
 <?php
+/* 
+1-  tout d'abord le premier require_once nous permet d'appeler le fichier function.php qui contient le code necéssaire pour se connecter à la base de données
+2-  Ensuite on vérifie que la personne connecté est bien l'administrateur, si ce n'est pas le cas elle est redirigé vers la page login.php
+3-  Quand le bouton 'Validation' est cliqué, le code à l'intérieur s'exécute :
+
+            - En bref ce code vérifie que tous les champs sont bien remplis pour envoyer le reste.
+
+4- Une requête Sql prépare l'ajout du produit à la page show_produit.php, une fois cela fait nous sommes redirigés sur la page show_produit.php
+
+
+
+*/
+
+
 require_once('bin/function.php');
 
-if (!isset($_SESSION['administrateur'])) {
+if (!isset($_SESSION['administrateur'])) { 
     header('Location: login.php');
     exit();
 }
 
-if (isset($_POST["send"])) {
+if (isset($_POST["send"])) { 
     if ($_POST['Nom'] != "" && $_POST['Prix'] != "" && $_POST['Description'] != "" && $_POST['Stock'] != "") {
         $bdd = connect();
 
@@ -34,18 +48,8 @@ if (isset($_POST["send"])) {
 require_once('bin/_header.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-
 <body>
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>"> 
         <h1 class="center_text">Ajouter un Produit</h1>
         <div>
             <label for="Nom">Nom :</label>
@@ -64,10 +68,7 @@ require_once('bin/_header.php');
             <label for="Stock">Nombre de Produits en stock :</label>
             <input type="number" id="Stock" name="Stock" placeholder="Entrez le nombre de produits en stock" required />
         </div>
-        <!-- <div>
-            <label for="Categorie">Catégorie du produit :</label>
-            <input type="text" id="Categorie" name="Categorie" placeholder="Entrez la catégorie du produit" required />
-        </div> -->
+    
 
         <div class="center_element">
             <input type="submit" name="send" value="Validation" style="width:130px" />
@@ -77,3 +78,5 @@ require_once('bin/_header.php');
 </body>
 
 </html>
+
+<?php require_once('bin/_footer.php')?>

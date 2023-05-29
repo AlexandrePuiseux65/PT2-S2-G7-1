@@ -1,5 +1,5 @@
 /*
-Style sheet for aboutus.php
+Feuille de style pour la page aboutus.php
 */
 .about-us img{
     width: 37%;
@@ -40,7 +40,9 @@ Style sheet for aboutus.php
 .about-us .about-us-element3-text{
     font-size: 1.2em;
 }
-
+/*
+Ce code concerne la deuxième partie de la page a propos avec les raisons de commander chez nous.
+*/
 .why-us-h2{
     display: flex;
     justify-content: center;
