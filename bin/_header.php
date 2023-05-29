@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/aboutus.css">
     <link rel="stylesheet" href="styles/user.css">
+    <link rel="stylesheet" href="styles/product.css">
 </head>
 <body>
     <?php require_once('bin/_nav.php'); ?>

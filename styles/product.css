@@ -1,0 +1,61 @@
+/*
+Style sheet for show_produit.php
+
+*/
+
+/* show_produit.php*/
+img{
+    width: 20%;
+}
+
+.shproduct-container{
+    width: 80%;
+  border-radius: 20px;
+  background-color: grey;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 3%;
+  display: flex
+}
+
+.index-main-content img{
+    border-radius: 20px;
+}
+  
+.shproduct-container-element1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+  
+}
+  
+.shproduct-container-element1 h3{
+    display: flex;
+    align-items: center;
+    font-size: 2.2em;
+    margin-bottom: 2%;
+}
+  
+.shproduct-container-element1 p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+  
+.shproduct-container-element1 a{
+    font-size: 1.2em;
+    margin-top: 2%;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+  
+.shproduct-container-element1 a:hover{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+  
+.shproduct-container-element1-price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2em;
+}
