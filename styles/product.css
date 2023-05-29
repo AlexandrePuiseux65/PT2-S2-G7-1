@@ -5,7 +5,7 @@ Style sheet for show_produit.php
 */
 
 /* show_produit.php*/
-img{
+.shproduct-container img{
     width: 20%;
     border-radius: 20px;
 }
